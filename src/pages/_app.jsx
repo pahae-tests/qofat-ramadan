@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 
 export default function MyApp({ Component, pageProps }) {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     const theme = localStorage.getItem('theme');
@@ -22,4 +22,5 @@ export default function MyApp({ Component, pageProps }) {
       <Footer dark={dark} />
     </>
   );
+
 }
